@@ -43,7 +43,10 @@ const ServiceCard: React.FC = () => {
             </div>
             <img src={line} alt="line" className={styles.line} />
             <div className={styles.subtitle}>
-                We provide you with the best choices. Adjust your health needs and ensure treatment with our qualified doctors. Consult with us to find suitable health services.
+                We provide to you the best choiches for you.
+                Adjust it to your health needs and make sure your undergo treatment <br/>
+                with our highly qualified doctors you can consult with us which
+                type of service is suitable for your health
             </div>
             <div className={styles.cardContainer}>
                 {photos.map((photo, index) => (
