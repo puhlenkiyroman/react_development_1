@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+}
+
+.title {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.line {
+    margin-top: 26px;
+    margin-bottom: 72px;
+}
+
+.card {
+    width: 350px;
+    height: 512px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    /* drop shadow */
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+}
+
+.photo {
+    border-radius: 5%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.title_card {
+    font-size: 1.5rem; /* Размер заголовка */
+    margin-bottom: 5px;
+}
+
+.subtitle_card {
+    font-size: 1rem; /* Размер подзаголовка */
+    color: #666; /* Цвет подзаголовка */
+    text-align: left;
+}
+
+.blueButton {
+    color: #4089ED;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.right_arrow {
+    margin-left: 5px;
+    width: 14px;
+    height: 10px;
+}
+
+.title_card, .subtitle_card, .blueButton {
+    text-align: left;
+    margin-left: 33px;
+}

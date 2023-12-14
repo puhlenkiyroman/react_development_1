@@ -19,8 +19,6 @@
     margin-bottom: 80px; /* Отступ от карточек */
 }
 
-/* ServiceCard.module.css */
-
 .cardContainer {
     display: flex;
     flex-wrap: wrap;

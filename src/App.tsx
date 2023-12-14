@@ -4,6 +4,7 @@ import ServiceCard from "./components/ServiceCard/ServiceCard.tsx";
 import HealthCareProviders from "./components/InfoCard/HealthCareProviders.tsx";
 import MobileApps from "./components/InfoCard/MobileApps.tsx";
 import Slider from "./components/Slider/Slider.tsx";
+import ArticleCard from "./components/ArticleCard/ArticleCard.tsx";
 
 function App() {
     return (
@@ -20,6 +21,9 @@ function App() {
             </div>
             <div style={{ marginTop: "266px" }}>
                 <Slider/>
+            </div>
+            <div style={{ marginTop: "227px" }}>
+                <ArticleCard/>
             </div>
         </div>
     );
