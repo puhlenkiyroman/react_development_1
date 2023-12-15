@@ -28,12 +28,12 @@ const ServiceCard: React.FC = () => {
     ];
 
     const subtitles:string[]  = [
-        'Choose your doctor from thousands of specialist, general, and trusted hospitals',
-        'Buy your medicines with our mobile application with a simple delivery system',
-        'Free consultation with our trusted doctors and get the best recommendations',
-        'Free consultation with our trusted doctors and get the best recommendations',
-        'You can get 24/7 urgent care for yourself or your children and your lovely family',
-        'Track and save your medical history and health data'
+        'Choose your doctor from thousands <br/> of specialist, general, and trusted<br/> hospitals',
+        'Buy your medicines with our<br/> mobile application with a simple<br/> delivery system',
+        'Free consultation with our trusted<br/> doctors and get the best<br/> recommendations',
+        'Free consultation with our trusted<br/> doctors and get the best<br/> recommendations',
+        'You can get 24/7 urgent care for<br/> yourself or your children and your<br/> lovely family',
+        'Track and save your medical history<br/> and health data'
     ];
 
     return (
@@ -53,7 +53,7 @@ const ServiceCard: React.FC = () => {
                     <div className={styles.card} key={index}>
                         <img src={photo} alt={`Photo ${index}`} className={`${styles.photo} ${styles.withMargin}`} />
                         <h2 className={`${styles.title_card} ${styles.withMargin}`}>{titles[index]}</h2>
-                        <p className={`${styles.subtitle_card} ${styles.withMargin}`}>{subtitles[index]}</p>
+                        <p className={`${styles.subtitle_card} ${styles.withMargin}`} dangerouslySetInnerHTML={{ __html: subtitles[index] }}/>
                     </div>
                 ))}
             </div>

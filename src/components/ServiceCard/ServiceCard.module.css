@@ -36,25 +36,28 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 
 .photo {
-    max-width: 100%; /* Укажите необходимую ширину для фото */
+    margin-top: 54px;
+    width: 91px; /* Укажите необходимую ширину для фото */
     height: 90px; /* Укажите необходимую высоту для фото */
-    object-fit: cover; /* Чтобы фото заполняло свою область */
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 }
 
 .title_card {
-    font-size: 1.5rem; /* Размер заголовка */
+    font-size: 24px; /* Размер заголовка */
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .subtitle_card {
-    font-size: 1rem; /* Размер подзаголовка */
-    color: #666; /* Цвет подзаголовка */
+    font-size: 16px; /* Размер подзаголовка */
+    color: #7D7987; /* Цвет подзаголовка */
+    text-align: left;
+    font-weight: 300;
+    line-height: 28px;
 }
 
 .withMargin {
@@ -72,4 +75,5 @@
     border: 1.4px solid #458FF6;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 700;
 }

@@ -46,11 +46,24 @@
     text-align: left;
 }
 
-.blueButton {
+.button {
     color: #4089ED;
     font-size: 17px;
     font-style: normal;
     font-weight: 600;
+}
+
+.blueButton {
+    margin-top: 69px;
+    width: 200px;
+    height: 56px;
+    padding: 10px 20px;
+    color: #458FF6;
+    background-color: white;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .right_arrow {
@@ -59,7 +72,7 @@
     height: 10px;
 }
 
-.title_card, .subtitle_card, .blueButton {
+.title_card, .subtitle_card, .button {
     text-align: left;
     margin-left: 33px;
 }

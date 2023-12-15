@@ -34,7 +34,7 @@ const ServiceCard: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.title}>
-                Our services
+                Check out our latest article
             </div>
             <img src={line} alt="line" className={styles.line} />
             <div className={styles.cardContainer}>
@@ -50,13 +50,16 @@ const ServiceCard: React.FC = () => {
                         <p
                             className={styles.subtitle_card}
                             dangerouslySetInnerHTML={{ __html: subtitles[index] }}/>
-                        <div className={styles.blueButton}>
+                        <div className={styles.button}>
                             Read more
                             <img src={right_arrow} alt="right_arrow" className={styles.right_arrow} />
                         </div>
                     </div>
                 ))}
             </div>
+            <button className={styles.blueButton}>
+                View all
+            </button>
         </div>
     );
 }
