@@ -20,16 +20,16 @@ const Header:React.FC = () => {
                         <a href="/" className={styles.navLink}>Home</a>
                     </li>
                     <li>
-                        <a href="/about" className={styles.navLink}>Find a doctor</a>
+                        <a href="/find_a_doctor" className={styles.navLink}>Find a doctor</a>
                     </li>
                     <li>
-                        <a href="/services" className={styles.navLink}>Apps</a>
+                        <a href="/apps" className={styles.navLink}>Apps</a>
                     </li>
                     <li>
-                        <a href="/portfolio" className={styles.navLink}>Testimonials</a>
+                        <a href="/testimonials" className={styles.navLink}>Testimonials</a>
                     </li>
                     <li>
-                        <a href="/contact" className={styles.navLink}>About us</a>
+                        <a href="/about_us" className={styles.navLink}>About us</a>
                     </li>
                 </ul>
             </nav>
