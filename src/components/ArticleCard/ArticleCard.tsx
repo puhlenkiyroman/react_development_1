@@ -6,7 +6,11 @@ import article2 from '../../assets/article2.png';
 import article3 from '../../assets/article3.png';
 import right_arrow from "../../assets/right_arrow.png";
 
-const ServiceCard: React.FC = () => {
+interface IProps {
+    className?: string;
+}
+
+const ArticleCard: React.FC<IProps> = ({className}) => {
     const photos: string[] = [
         article1,
         article2,
@@ -32,8 +36,8 @@ const ServiceCard: React.FC = () => {
     ];
 
     return (
-        <div className={styles.container}>
-            <div className={styles.title}>
+        <div className={`${className} ${styles.container}`}>
+        <div className={styles.title}>
                 Check out our latest article
             </div>
             <img src={line} alt="line" className={styles.line} />
@@ -64,4 +68,4 @@ const ServiceCard: React.FC = () => {
     );
 }
 
-export default ServiceCard;
+export default ArticleCard;

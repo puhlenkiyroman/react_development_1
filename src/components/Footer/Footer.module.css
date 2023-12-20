@@ -1,35 +1,41 @@
-/* Footer.module.css */
-
-
 .container {
     width: 100%;
-    background-color: #458FF6;
+    background: #5A98F2;
     color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 40px 0;
+    justify-content: space-between;;
+    padding: 60px 0 60px 0 ;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.rights{
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
 }
 
 .column {
-    width: 20%;
-    padding: 0 10px;
+    text-align: left;
+    flex: 1;
+    padding: 0 80px;
 }
 
 .column li {
     list-style-type: none;
-
+    margin-top: 10px;
 }
 
 .column h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-
-.column p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
 
 .logo {
     display: flex;
@@ -49,7 +55,7 @@
 }
 
 .letter {
-    color: #458FF6;
+    color: #5A98F2;
     font-size: 24px;
     font-weight: bold;
 }

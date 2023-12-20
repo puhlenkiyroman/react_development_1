@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-const Footer: React.FC = () => {
+interface IProps {
+    className?: string;
+}
+
+const Footer: React.FC<IProps> = ({className}) => {
     return (
-        <footer className={styles.container}>
+        <footer className={`${className} ${styles.container}`}>
             <div className={styles.column}>
                 <div className={styles.logo}>
                     <div className={styles.circle}>
@@ -13,36 +17,34 @@ const Footer: React.FC = () => {
                         HealthCare
                     </div>
                 </div>
-                <p>HealthCare provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-                <p>©HealthCare PTY LTD 2023. All rights reserved</p>
+                <div className={styles.description}>
+                HealthCare provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+                </div>
+                <div className={styles.rights}>
+                    ©HealthCare PTY LTD 2023. All rights reserved
+                </div>
             </div>
-            <div className={styles.column}>
-                <h3>Company</h3>
-                <ul>
-                    <li>About</li>
-                    <li>Testimonials</li>
-                    <li>Find a doctor</li>
-                    <li>Apps</li>
-                </ul>
-            </div>
-            <div className={styles.column}>
-                <h3>Company</h3>
-                <ul>
-                    <li>About</li>
-                    <li>Testimonials</li>
-                    <li>Find a doctor</li>
-                    <li>Apps</li>
-                </ul>
-            </div>
-            <div className={styles.column}>
-                <h3>Company</h3>
-                <ul>
-                    <li>About</li>
-                    <li>Testimonials</li>
-                    <li>Find a doctor</li>
-                    <li>Apps</li>
-                </ul>
-            </div>
+                <div className={styles.column}>
+                    <h3>Company</h3>
+                        <li>About</li>
+                        <li>Testimonials</li>
+                        <li>Find a doctor</li>
+                        <li>Apps</li>
+                </div>
+                <div className={styles.column}>
+                    <h3>Region</h3>
+                        <li>Indonesia</li>
+                        <li>Singapore</li>
+                        <li>Hongkong</li>
+                        <li>Canada</li>
+                </div>
+                <div className={styles.column}>
+                    <h3>Help</h3>
+                        <li>Help center</li>
+                        <li>Contact support</li>
+                        <li>Instructions</li>
+                        <li>How it works</li>
+                </div>
         </footer>
     );
 }

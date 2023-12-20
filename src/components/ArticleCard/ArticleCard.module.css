@@ -31,22 +31,29 @@
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
 }
 
 .title_card {
-    font-size: 1.5rem; /* Размер заголовка */
-    margin-bottom: 5px;
+    color: black;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
 }
 
 .subtitle_card {
-    font-size: 1rem; /* Размер подзаголовка */
-    color: #666; /* Цвет подзаголовка */
+    color: #7D7987;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
     text-align: left;
 }
 
 .button {
+    margin-top: 25px;
     color: #4089ED;
     font-size: 17px;
     font-style: normal;
@@ -54,7 +61,7 @@
 }
 
 .blueButton {
-    margin-top: 69px;
+    margin-top: 72px;
     width: 200px;
     height: 56px;
     padding: 10px 20px;

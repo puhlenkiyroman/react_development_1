@@ -5,7 +5,10 @@ import customer from "../../assets/customer.png";
 import leftArrow from "../../assets/left_arrow.png";
 import rightArrow from "../../assets/right_arrow.png";
 
-const Slider: React.FC = () => {
+interface IProps {
+    className?: string;
+}
+const Slider: React.FC<IProps> = ({className}) => {
     const reviews = [
         {
             name: 'Edward Newgate',
@@ -37,7 +40,7 @@ const Slider: React.FC = () => {
 
     return (
         <>
-            <div className={styles.container}>
+            <div className={`${className} ${styles.container}`}>
                 <div className={styles.card}>
                     <div className={styles.title}>
                         What our customers are saying

@@ -1,8 +1,12 @@
+.container {
+    padding: 40px 80px 0 80px;
+    text-align: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 .logo {
@@ -32,10 +36,17 @@
     margin-left: 12px; /* Отступ между логотипом и брендом */
 }
 
-.contentBlock {
+/*.element3dots {
+    margin-top: 63px;
+    margin-left: -40px;
     display: flex;
+}*/
+
+.contentBlock {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
 }
 
 .textContainer {

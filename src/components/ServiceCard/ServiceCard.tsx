@@ -8,7 +8,11 @@ import OnlinePharmacy from "../../assets/Online_pharmacy_photo.png";
 import SearchDoctor from "../../assets/Search_doctor_photo.png";
 import TrackingPhoto from "../../assets/Tracking_photo.png";
 
-const ServiceCard: React.FC = () => {
+interface IProps {
+    className?: string;
+}
+
+const ServiceCard: React.FC<IProps> = ({className}) => {
     const photos:string[]  = [
         SearchDoctor,
         OnlinePharmacy,
@@ -37,7 +41,7 @@ const ServiceCard: React.FC = () => {
     ];
 
     return (
-        <div className={styles.container}>
+        <div className={`${className} ${styles.container}`}>
             <div className={styles.title}>
                 Our services
             </div>

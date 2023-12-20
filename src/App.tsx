@@ -1,6 +1,6 @@
-import './App.css'
+import styles from './App.module.css'
 import Header from "./components/Header/Header.tsx";
-import ServiceCard from "./components/ServiceCard/ServiceCard.tsx";
+import ServiceCard from "./components/ServiceCard";
 import HealthCareProviders from "./components/InfoCard/HealthCareProviders.tsx";
 import MobileApps from "./components/InfoCard/MobileApps.tsx";
 import Slider from "./components/Slider/Slider.tsx";
@@ -9,27 +9,15 @@ import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
     return (
-        <div>
-                <Header />
-            <div style={{ marginTop: "192px" }}>
-                <ServiceCard />
-            </div>
-            <div style={{ marginTop: "192px" }}>
-                <HealthCareProviders/>
-            </div>
-            <div style={{ marginTop: "192px" }}>
-                <MobileApps />
-            </div>
-            <div style={{ marginTop: "266px" }}>
-                <Slider/>
-            </div>
-            <div style={{ marginTop: "227px" }}>
-                <ArticleCard/>
-            </div>
-            <div style={{ marginTop: "227px" }}>
-                <Footer/>
-            </div>
-        </div>
+        <>
+            <Header />
+            <ServiceCard className = {styles.margins}/>
+            <HealthCareProviders className = {styles.margins}/>
+            <MobileApps className = {styles.margins}/>
+            <Slider className = {styles.margins}/>
+            <ArticleCard className = {styles.margins}/>
+            <Footer className = {styles.margins}/>
+        </>
     );
 }
 
