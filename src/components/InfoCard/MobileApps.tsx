@@ -1,8 +1,8 @@
 import React from "react";
 import styles from './MobileApps.module.css';
 import illustration3 from '../../assets/illustration3.png';
-import vector from '../../assets/Vector.png'
 import line from "../../assets/line.png";
+import Button from "../Button/Button.tsx";
 
 interface IProps {
     className?: string;
@@ -21,9 +21,7 @@ const MobileApps: React.FC<IProps> = ({className}) => {
                         instantaneously (no tedeous form, long calls,<br/>
                         or administrative hassle) and securely
                     </h3>
-                    <button className={styles.blueButton}>Download
-                        <img src={vector} alt="vector" className={styles.vector} />
-                    </button>
+                    <Button className={styles.button} textColor = "#458FF6" color="#FFFFFF" buttonText="Download ↓"  />
                 </div>
                 <img src={illustration3} alt="Illustration" className={styles.illustration} />
             </div>

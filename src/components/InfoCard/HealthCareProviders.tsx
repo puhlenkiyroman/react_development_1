@@ -2,6 +2,8 @@ import React from "react";
 import styles from './HealthCareProviders.module.css';
 import illustration2 from '../../assets/illustration2.png';
 import line from "../../assets/line.png";
+import Button from "../Button/Button.tsx";
+import element3dots from "../../assets/element3dots.png";
 
 interface IProps {
     className?: string;
@@ -20,9 +22,10 @@ const HealthCareProviders: React.FC<IProps> = ({className}) => {
                         accessible on mobile and online for everyone. To us, it’s<br/>
                         not just work. We take pride in the solutions we deliver
                     </h3>
-                    <button className={styles.blueButton}>Learn more</button>
+                    <Button className={styles.button} textColor = "#458FF6" color="#FFFFFF" buttonText="Learn more" />
                 </div>
             </div>
+            <img src={element3dots} alt="element3dots" className={styles.element3dots} />
         </div>
     );
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import styles from './Header.module.css';
 import illustration from '../../assets/illustration.png';
-// import element3dots from '../../assets/element3dots.png';
+import element3dots from '../../assets/element3dots.png';
+import Button from "../Button/Button.tsx";
 
 interface IProps {
     className?: string;
@@ -39,7 +40,7 @@ const Header: React.FC<IProps> = ({className}) => {
                     </ul>
                 </nav>
             </header>
-            {/*<img src={element3dots} alt="element3dots" className={styles.element3dots} />*/}
+            <img src={element3dots} alt="element3dots" className={styles.element3dots} />
             <div className={styles.contentBlock}>
                 <div className={styles.textContainer}>
                     <div className={styles.text}>
@@ -48,7 +49,7 @@ const Header: React.FC<IProps> = ({className}) => {
                             Our service provides progressive, and <br/> affordable healthcare,
                             accessible on mobile <br/> and online for everyone
                         </h3>
-                        <button className={styles.blueButton}>Consult today</button>
+                        <Button className={styles.myCustomButton} color="#458FF6" buttonText="Consult today" />
                     </div>
                     <img src={illustration} alt="Illustration" className={styles.illustration} />
                 </div>

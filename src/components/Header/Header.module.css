@@ -36,14 +36,15 @@
     margin-left: 12px; /* Отступ между логотипом и брендом */
 }
 
-/*.element3dots {
-    margin-top: 63px;
-    margin-left: -40px;
+.element3dots {
+    position: absolute;
+    margin-top: 60px;
+    left: 0;
     display: flex;
-}*/
+}
 
 .contentBlock {
-    margin-top: 35px;
+    margin-top: 155px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +94,11 @@
     font-size: 18px;
 }
 
+.navLink[href='/'] {
+    color: black;
+    font-weight: 700;
+}
+
 /* Для компьютеров */
 @media (min-width: 1024px) {
     .navList {
@@ -108,12 +114,27 @@
 
     .navLink {
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 400;
         color: #888; /* Цвет ссылок по умолчанию - серый */
     }
 
-    /* Стили для выбранной ссылки */
-    .navLink:active {
-        color: #000; /* Цвет активной ссылки - черный */
+    .illustration {
+        max-width: 693px;
+        position: absolute;
+        right: 80px; /* Отступ 80px от правого края */
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+
+    .container {
+        padding: 40px 20px 0 20px;
+        text-align: center;
+    }
+
+    .illustration {
+        max-width: 75%;
+        position: absolute;
+        right: 20px; /* Отступ 20px от правого края */
     }
 }

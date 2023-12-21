@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import element5dots from "../../assets/element5dots.png";
+import element4dots from "../../assets/element4dots.png";
 
 interface IProps {
     className?: string;
@@ -23,6 +25,7 @@ const Footer: React.FC<IProps> = ({className}) => {
                 <div className={styles.rights}>
                     ©HealthCare PTY LTD 2023. All rights reserved
                 </div>
+                <img src={element4dots} alt="element4dots" className={styles.element4dots} />
             </div>
                 <div className={styles.column}>
                     <h3>Company</h3>
@@ -38,7 +41,8 @@ const Footer: React.FC<IProps> = ({className}) => {
                         <li>Hongkong</li>
                         <li>Canada</li>
                 </div>
-                <div className={styles.column}>
+            <img src={element5dots} alt="element5dots" className={styles.element5dots} />
+            <div className={styles.column}>
                     <h3>Help</h3>
                         <li>Help center</li>
                         <li>Contact support</li>

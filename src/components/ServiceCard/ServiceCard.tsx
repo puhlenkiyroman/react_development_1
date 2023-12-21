@@ -7,6 +7,9 @@ import EmergencyCore from "../../assets/Emergency_core_photo.png";
 import OnlinePharmacy from "../../assets/Online_pharmacy_photo.png";
 import SearchDoctor from "../../assets/Search_doctor_photo.png";
 import TrackingPhoto from "../../assets/Tracking_photo.png";
+import CloudPhoto from  "../../assets/cloudphoto_servicecard.png"
+import element5dots from "../../assets/element5dots.png";
+import Button from "../Button/Button.tsx";
 
 interface IProps {
     className?: string;
@@ -32,16 +35,17 @@ const ServiceCard: React.FC<IProps> = ({className}) => {
     ];
 
     const subtitles:string[]  = [
-        'Choose your doctor from thousands <br/> of specialist, general, and trusted<br/> hospitals',
-        'Buy your medicines with our<br/> mobile application with a simple<br/> delivery system',
-        'Free consultation with our trusted<br/> doctors and get the best<br/> recommendations',
-        'Free consultation with our trusted<br/> doctors and get the best<br/> recommendations',
-        'You can get 24/7 urgent care for<br/> yourself or your children and your<br/> lovely family',
-        'Track and save your medical history<br/> and health data'
+        'Choose your doctor from thousands of specialist, general, and trusted hospitals',
+        'Buy your medicines with our mobile application with a simple delivery system',
+        'Free consultation with our trusted doctors and get the best recommendations',
+        'Free consultation with our trusted doctors and get the best recommendations',
+        'You can get 24/7 urgent care for yourself or your children and your lovely family',
+        'Track and save your medical history and health data'
     ];
 
     return (
         <div className={`${className} ${styles.container}`}>
+            <img src={CloudPhoto} alt="CloudPhoto" className={styles.cloudphoto} />
             <div className={styles.title}>
                 Our services
             </div>
@@ -57,13 +61,14 @@ const ServiceCard: React.FC<IProps> = ({className}) => {
                     <div className={styles.card} key={index}>
                         <img src={photo} alt={`Photo ${index}`} className={`${styles.photo} ${styles.withMargin}`} />
                         <h2 className={`${styles.title_card} ${styles.withMargin}`}>{titles[index]}</h2>
-                        <p className={`${styles.subtitle_card} ${styles.withMargin}`} dangerouslySetInnerHTML={{ __html: subtitles[index] }}/>
+                        <p className={`${styles.subtitle_card} ${styles.withMargin}`}>
+                            {subtitles[index]}
+                        </p>
                     </div>
                 ))}
             </div>
-            <button className={styles.blueButton}>
-                Learn more
-            </button>
+            <img src={element5dots} alt="element5dots" className={styles.element5dots} />
+            <Button className={styles.button} textColor = "#458FF6" color="#FFFFFF" buttonText="Learn more" />
         </div>
     );
 }

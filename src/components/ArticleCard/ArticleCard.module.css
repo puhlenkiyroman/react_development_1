@@ -35,6 +35,11 @@
     justify-content: center;
 }
 
+.title_card,
+.subtitle_card {
+    max-width: 265px;
+}
+
 .title_card {
     color: black;
     font-size: 21px;
@@ -65,8 +70,6 @@
     width: 200px;
     height: 56px;
     padding: 10px 20px;
-    color: #458FF6;
-    background-color: white;
     border-radius: 55px;
     border: 1.4px solid #458FF6;
     cursor: pointer;
@@ -82,4 +85,11 @@
 .title_card, .subtitle_card, .button {
     text-align: left;
     margin-left: 33px;
+}
+
+.element5dots {
+    position: absolute;
+    top: 115px;
+    left: 70px;
+    z-index: -1;
 }

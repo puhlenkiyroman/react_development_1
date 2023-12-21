@@ -108,3 +108,16 @@
 .active_dot {
     background-color: #5B9BF3;
 }
+
+.element3dots {
+    position: absolute;
+    margin-top: 100px;
+    left: 60px;
+    z-index: -1;
+}
+
+.element3dotsblue {
+    position: absolute;
+    margin-bottom: 473px;
+    right: 72px;
+}

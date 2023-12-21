@@ -32,16 +32,20 @@
     line-height: 32px;
 }
 
-.blueButton {
+.button {
     margin-top: 69px;
     width: 200px;
     height: 56px;
     padding: 10px 20px;
-    color: #458FF6;
-    background-color: white;
     border-radius: 55px;
     border: 1.4px solid #458FF6;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
+}
+
+.element3dots {
+    position: absolute;
+    right: 10px;
+    margin-top: 550px;
 }

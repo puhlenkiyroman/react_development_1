@@ -4,6 +4,8 @@ import line from "../../assets/white_vector.png";
 import customer from "../../assets/customer.png";
 import leftArrow from "../../assets/left_arrow.png";
 import rightArrow from "../../assets/right_arrow.png";
+import element3dotsblue from "../../assets/element3dotsblue.png";
+import element3dots from "../../assets/element3dots.png";
 
 interface IProps {
     className?: string;
@@ -61,6 +63,8 @@ const Slider: React.FC<IProps> = ({className}) => {
                         <div className={styles.quote}>
                             {reviews[currentSlide].quote}
                         </div>
+                        <img src={element3dots} alt="element3dots" className={styles.element3dots} />
+                        <img src={element3dotsblue} alt="element3dots" className={styles.element3dotsblue} />
                     </div>
                 </div>
             </div>
