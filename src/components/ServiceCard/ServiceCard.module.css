@@ -41,13 +41,13 @@
 
 .photo {
     margin-top: 54px;
-    width: 91px; /* Укажите необходимую ширину для фото */
-    height: 90px; /* Укажите необходимую высоту для фото */
+    width: 91px;
+    height: 90px;
     margin-bottom: 22px;
 }
 
 .title_card {
-    font-size: 24px; /* Размер заголовка */
+    font-size: 24px;
     margin-bottom: 5px;
     text-align: left;
 }

@@ -63,8 +63,8 @@ const Slider: React.FC<IProps> = ({className}) => {
                         <div className={styles.quote}>
                             {reviews[currentSlide].quote}
                         </div>
+                        <img src={element3dots} alt="element3dots" className={styles.element3dotsblue} />
                         <img src={element3dots} alt="element3dots" className={styles.element3dots} />
-                        <img src={element3dotsblue} alt="element3dots" className={styles.element3dotsblue} />
                     </div>
                 </div>
             </div>

@@ -12,25 +12,26 @@ interface IProps {
 const Button: React.FC<IProps> = ({ className, color, buttonText, textColor, onClick }) => {
     const [isHovered, setIsHovered] = useState(false); // Состояние для отслеживания наведения на кнопку
 
+    // Используем CSS переменные вместо жестко заданных цветов
     const buttonStyle = {
-        backgroundColor: color || '#458FF6' || '#FFFFFF',
-        color: textColor || '#FFFFFF' || '#458FF6',
+        backgroundColor: color || 'var(--your-button-color-variable, #458FF6)',
+        color: textColor || 'var(--your-button-text-color-variable, #FFFFFF)',
     };
 
+    // Аналогично для стиля при наведении
     const hoverButtonStyle = {
-        backgroundColor: textColor || '#FFFFFF' || '#458FF6',
-        color: color || '#458FF6' || '#FFFFFF',
+        backgroundColor: textColor || 'var(--your-button-text-color-variable, #FFFFFF)',
+        color: color || 'var(--your-button-color-variable, #458FF6)',
     };
 
     const handleMouseEnter = () => {
-        setIsHovered(true); // Устанавливаем состояние наведения при наведении на кнопку
+        setIsHovered(true);
     };
 
     const handleMouseLeave = () => {
-        setIsHovered(false); // Сбрасываем состояние наведения при уходе курсора с кнопки
+        setIsHovered(false);
     };
 
-    // Выбираем стиль в зависимости от состояния наведения
     const currentStyle = isHovered ? hoverButtonStyle : buttonStyle;
 
     return (

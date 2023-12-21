@@ -1,12 +1,16 @@
 :root {
+  --your-background-gradient-variable: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  --your-main-text-color-variable: white;
+  --your-secondary-text-color-variable: #4089ED;
+  --your-button-color-variable: #458FF6;
+
+  /* Остальные стили из :root остаются без изменений */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
