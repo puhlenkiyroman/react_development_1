@@ -7,24 +7,28 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Versions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+node: '18.18.0', npm: '10.2.5', typescript: '5.2.2'
 
-- Configure the top-level `parserOptions` property like this:
+# To run you need to...
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Have Vite and write npm install + npm run dev
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Featurues
+
+Slider + View All works
+
+# Screenshots
+
+![image](https://github.com/puhlenkiyroman/react_development_1/assets/80386499/784b5d5e-ea09-4909-897b-4fc0b87df9ad)
+
+![image](https://github.com/puhlenkiyroman/react_development_1/assets/80386499/85f71fe5-a913-4d24-acfb-45021655fedb)
+
+![image](https://github.com/puhlenkiyroman/react_development_1/assets/80386499/f48268e3-8721-4932-acdf-ec09c24e9e1d)
+
+![image](https://github.com/puhlenkiyroman/react_development_1/assets/80386499/e1252f7c-3ad7-462d-942a-73c2a4d289fd)
+
+![image](https://github.com/puhlenkiyroman/react_development_1/assets/80386499/a1c4c94a-386e-45dc-8cf1-83e3cca5ee34)
+
+![image](https://github.com/puhlenkiyroman/react_development_1/assets/80386499/c8591998-1a6e-402a-b436-6e169e5d5d68)
