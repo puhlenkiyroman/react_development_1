@@ -4,7 +4,6 @@ import line from "../../assets/white_vector.png";
 import customer from "../../assets/customer.png";
 import leftArrow from "../../assets/left_arrow.png";
 import rightArrow from "../../assets/right_arrow.png";
-import element3dotsblue from "../../assets/element3dotsblue.png";
 import element3dots from "../../assets/element3dots.png";
 
 interface IProps {
